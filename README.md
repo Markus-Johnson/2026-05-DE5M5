@@ -1,17 +1,17 @@
 # 2026-05-DE5M5
-#Questions
-- Where is the data stored
+# Ask Questions
 
-User stories - Librarian
+# User stories - 
+Librarian staff
 How many books are overdue?
 How many books are currently in stock?
 How many books are checked out?
 
-Manager
+library Manager
 - Most popular genre/books
 - Seasonal forecast of selective books - KPI report
 
-End goals
+# End goals
 - Azure data storage
 - Python script to automate processes
 - How do they want to aggregate the data?
