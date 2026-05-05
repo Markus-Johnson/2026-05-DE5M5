@@ -21,5 +21,10 @@ library Manager
 How do they wanted this reported on? - Possibly PowerBI
 
 # To do list
+- Test code
+- Confirm business rules with stakeholder
+- Build file 
 
+
+# Delivery Phases
 
