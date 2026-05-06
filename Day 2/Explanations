@@ -1,0 +1,11 @@
+Raw text dates
+      ↓
+clean_dates()        → converts text into real dates Python can calculate
+      ↓
+calculate_borrow_days() → subtracts checkout from return = number of days
+      ↓
+flag_late_returns()  → checks if days > 14 = True/False
+      ↓
+flag_errors()        → checks if days < 0 = True/False
+
+"The functions work together in a chain — first we convert the text dates into real date objects, then we subtract one from the other to get the number of days borrowed, and finally we use that number to automatically flag any late returns or impossible dates. Each function does one specific job and passes the result to the next."
