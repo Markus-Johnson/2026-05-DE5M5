@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+
+  sql_server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourPassword123!
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqldata:/var/opt/mssql
+    restart: always
+
+  app:
+    build: .
+    depends_on:
+      - sql_server
+    volumes:
+      - ./output:/output
+
+volumes:
+  sqldata:
